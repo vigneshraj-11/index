@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/vigneshraj-11/index.git/static/css/main.606637ce.css",
+    "main.js": "/vigneshraj-11/index.git/static/js/main.040cf417.js",
+    "static/js/787.6dac1136.chunk.js": "/vigneshraj-11/index.git/static/js/787.6dac1136.chunk.js",
+    "static/media/BG.png": "/vigneshraj-11/index.git/static/media/BG.0ecb8a23286976c8e34a.png",
+    "index.html": "/vigneshraj-11/index.git/index.html",
+    "main.606637ce.css.map": "/vigneshraj-11/index.git/static/css/main.606637ce.css.map",
+    "main.040cf417.js.map": "/vigneshraj-11/index.git/static/js/main.040cf417.js.map",
+    "787.6dac1136.chunk.js.map": "/vigneshraj-11/index.git/static/js/787.6dac1136.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.606637ce.css",
+    "static/js/main.040cf417.js"
+  ]
+}
