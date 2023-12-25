@@ -38,8 +38,8 @@ export default function Navbar() {
             Vignesh Gunasekaran
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }} >
-            <Button sx={{ color: "black"}} style={headerFont}>About</Button>
-            <Button sx={{ color: "black"}} style={headerFont}>Contact</Button>
+            <Button sx={{ color: "black"}} style={headerFont} href="#about">About</Button>
+            <Button sx={{ color: "black"}} style={headerFont} href="#contact">Contact</Button>
           </Box>
         </Toolbar>
       </AppBar>
