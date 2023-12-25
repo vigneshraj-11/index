@@ -3,7 +3,7 @@ import React from "react";
 
 const footer = {
   fontFamily: "cursive",
-  fontSize: "12px",
+  fontSize: "10px",
   padding: "10px",
   position: "fixed",
   bottom: 0,

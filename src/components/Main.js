@@ -3,7 +3,13 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import image from "../assets/img/img-5.jpg";
 import Zoom from "react-medium-image-zoom";
-import 'react-medium-image-zoom/dist/styles.css';
+import "react-medium-image-zoom/dist/styles.css";
+import Typewriter from "typewriter-effect";
+import config from "./config";
+import MessageParser from "./MessageParser";
+import ActionProvider from "./ActionProvider";
+import Chatbot from "react-chatbot-kit";
+import "react-chatbot-kit/build/main.css";
 
 function Main() {
   const isLargeScreen = useMediaQuery({ query: "(min-width: 992px)" });
@@ -47,13 +53,17 @@ function Main() {
       <Grid item lg={8} xs={12}>
         <div style={introDiv}>
           <Typography variant="div" color="primary">
-            Introduction...
+            <Typewriter
+              options={{
+                strings: ["Hi Welcome you...","Greetings! I am Vignesh Raj Gunasekaran..."],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </Typography>
-          <br />
           <div style={introStyle}>
             <p className="first-line-padding">
-              Greetings! I am Vignesh Raj Gunasekaran, an accomplished Software
-              Engineer and Power Platform Developer with a dynamic background
+              An accomplished Software Engineer and Power Platform Developer with a dynamic background
               spanning over three years within the IT industry. My expertise
               primarily revolves around Java and React, positioning me as a
               versatile Full Stack Developer well-versed in crafting
@@ -63,14 +73,14 @@ function Main() {
               methodologies to deliver high-quality applications. My proficiency
               extends across an impressive array of technologies including
               React.js, Java, MySQL, MongoDB, Spring Boot, HTML, CSS,
-              JavaScript, Bootstrap, Material-UI, and Ant Design. My journey in
-              AI and Power Platform is a testament to my commitment to
-              continuous learning and innovation. As I delve deeper into these
-              domains, I aim to amalgamate my existing skill set with
-              cutting-edge technologies to craft intelligent, efficient, and
-              impactful solutions. Driven by a passion for delivering
-              excellence, I thrive in collaborative environments where
-              creativity and problem-solving converge.
+              JavaScript, Bootstrap, Material-UI, and Ant Design.
+              <br /> <br /> My journey in AI and Power Platform is a testament
+              to my commitment to continuous learning and innovation. As I delve
+              deeper into these domains, I aim to amalgamate my existing skill
+              set with cutting-edge technologies to craft intelligent,
+              efficient, and impactful solutions. Driven by a passion for
+              delivering excellence, I thrive in collaborative environments
+              where creativity and problem-solving converge.
               <br /> <br /> My dedication to staying abreast of industry trends
               and my hands-on experience allows me to seamlessly adapt to
               diverse projects and contribute effectively to their success. I am
@@ -79,6 +89,13 @@ function Main() {
               value in the ever-evolving landscape of technology.
             </p>
           </div>
+        </div>
+        <div style={{ display: "none" }}>
+          <Chatbot
+            config={config}
+            messageParser={MessageParser}
+            actionProvider={ActionProvider}
+          />
         </div>
       </Grid>
     </Grid>
