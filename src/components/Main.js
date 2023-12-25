@@ -1,28 +1,29 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
-import { Carousel } from "antd";
-
-const contentStyle = {
-  borderRadius: "5px",
-  maxWidth: "320px",
-  height: "360px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79"  
-};
+import image from "../assets/img/img-5.jpg";
+import Zoom from "react-medium-image-zoom";
+import 'react-medium-image-zoom/dist/styles.css';
 
 function Main() {
   const isLargeScreen = useMediaQuery({ query: "(min-width: 992px)" });
 
-  const carouselStyle = {
-    margin: "50px" ? "20px" : "auto",
-    right: isLargeScreen ? "-40px" : "auto",
+  const contentStyle = {
+    borderRadius: "5px",
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    background: "#364d79",
+    display: "flex",
+    justifyContent: isLargeScreen ? "center" : "flex-end",
+  };
+
+  const imageDiv = {
+    margin: "40px",
   };
 
   const introDiv = {
-    margin: "50px" ? "20px" : "auto",
+    margin: "50px" ? "40px" : "auto",
     fontFamily: "cursive",
     fontWeight: "bold",
   };
@@ -37,20 +38,11 @@ function Main() {
   return (
     <Grid container spacing={2}>
       <Grid item lg={4} xs={12}>
-        <Carousel autoplay effect="fade" style={carouselStyle}>
-          <div>
-            <h3 style={contentStyle}>1</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>2</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>3</h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>4</h3>
-          </div>
-        </Carousel>
+        <div style={imageDiv}>
+          <Zoom>
+            <img src={image} alt="personalImage" style={contentStyle} />
+          </Zoom>
+        </div>
       </Grid>
       <Grid item lg={8} xs={12}>
         <div style={introDiv}>
