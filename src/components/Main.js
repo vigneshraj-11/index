@@ -17,6 +17,7 @@ import reactIcon from "../assets/icon/react.png";
 import cssIcon from "../assets/icon/css.png";
 import msIcon from "../assets/icon/ms.png";
 import javaIcon from "../assets/icon/java.png";
+import resumePdf from "../assets/pdf/resume.pdf";
 
 function Main() {
   const isLargeScreen = useMediaQuery({ query: "(min-width: 992px)" });
@@ -293,9 +294,9 @@ function Main() {
               <br />
               <Typography variant="h6" style={skillStyle}>
                 <a
-                  href="/resume.pdf"
+                  href={resumePdf}
                   style={{ textDecoration: "none", color: "inherit" }}
-                  download="Vignesh_CV.pdf"
+                  download="Vignesh_CV"
                 >
                   Get a CV
                 </a>
