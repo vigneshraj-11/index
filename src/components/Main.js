@@ -133,13 +133,7 @@ function Main() {
         <Grid container spacing={3}>
           <Grid item lg={12} xs={12}>
             <Typography variant="h6" color="primary" style={headerStyle}>
-              <Typewriter
-                options={{
-                  strings: ["About..."],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              About
             </Typography>
           </Grid>
           <Grid item lg={4} xs={12}>
@@ -230,13 +224,7 @@ function Main() {
         <Grid container spacing={3}>
           <Grid item lg={12} xs={12}>
             <Typography variant="h6" color="primary" style={skillStyle}>
-              <Typewriter
-                options={{
-                  strings: ["Skill sets..."],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              Skill Sets
             </Typography>
           </Grid>
           <br />
@@ -268,15 +256,14 @@ function Main() {
           style={{ height: "300px", display: "grid", alignItems: "center" }}
         >
           <Grid container spacing={3}>
-            <Grid item lg={6} xs={12}>
+            <Grid
+              item
+              lg={6}
+              xs={12}
+              style={{ display: "grid", alignItems: "center" }}
+            >
               <Typography variant="h6" color="primary" style={skillStyle}>
-                <Typewriter
-                  options={{
-                    strings: ["Contact Me..."],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
+                Contact Me
               </Typography>
             </Grid>
             <Grid item lg={6} xs={12}>
