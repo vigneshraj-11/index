@@ -15,5 +15,18 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      document.addEventListener("keydown", function (event) {
+        if (event.keyCode === 123) {
+          event.preventDefault();
+        } else if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+          event.preventDefault();
+        }
+      });
+
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>

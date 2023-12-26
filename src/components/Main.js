@@ -132,8 +132,8 @@ function Main() {
       <div id="about" style={{ margin: "50px" }}>
         <Grid container spacing={3}>
           <Grid item lg={12} xs={12}>
-            <Typography variant="h6" color="primary" style={headerStyle}>
-              About
+            <Typography variant="h6" color="primary" style={skillStyle}>
+              About Me
             </Typography>
           </Grid>
           <Grid item lg={4} xs={12}>
@@ -267,7 +267,6 @@ function Main() {
               </Typography>
             </Grid>
             <Grid item lg={6} xs={12}>
-              <br />
               <Typography variant="h6" style={skillStyle}>
                 <a
                   href="mailto:vigneshraj.jul11@gmail.com"
@@ -288,6 +287,17 @@ function Main() {
                   rel="noopener noreferrer"
                 >
                   Via Whatsapp
+                </a>
+              </Typography>
+              <br />
+              <br />
+              <Typography variant="h6" style={skillStyle}>
+                <a
+                  href="/resume.pdf"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                  download="Vignesh_CV.pdf"
+                >
+                  Get a CV
                 </a>
               </Typography>
             </Grid>
